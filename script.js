@@ -12,11 +12,11 @@ formation.addEventListener('change', ()=>{
         alert("Select your formation")
         muds.style.pointerEvents = "none"
     }
+    muds.selectedIndex = 0;
     console.log(formation.value);
     muds.disabled = false;
     muds.style.pointerEvents = "auto"
 })
-
 muds.addEventListener('change', ()=>{
     mudValue = muds.value;
     console.log(muds.value);
